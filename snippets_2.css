@@ -1,10 +1,29 @@
+
+
+.main-header--inner{
+    display:flex;
+        justify-content: space-between;
+}
+.header--tools {
+    background:transparent;
+}
 .co-branding{
     height:0;
     width:234px;
     padding-bottom: 57px;
     position:relative;
     display:block;
+    
+}
 
+.insert-co-branding{
+    display: flex;
+    padding-top: 19px;
+    padding-right: 47px;
+}
+
+.logo{
+    margin-top:19px;
 }
 .co-branding img{
     position: absolute; 
@@ -13,13 +32,12 @@
     left: 0; 
     top: 0;  
 }
-.main-header--inner--top{
-    background:rgba(255, 255, 255, 0.95);
-}
 .searchBox{
     width: 200px;
-    margin-right: 0;
-    margin-left: 0;
+    margin-right:0;
+}
+.mainnav{
+    background-color:transparent;
 }
 .news-home{
     padding:10px 47px}
@@ -32,71 +50,59 @@
 .footer-copy-inner{
     padding:30px 47px 30px 20px;
 }
-
-@media screen and (min-width:321px){
-    .main-header--inner--top{
-
-        padding:19px 47px 0 0;
-        display:flex;
-        justify-content:space-between;
-        align-items:flex-start;}
-
+@media screen and (max-width:375px){
     .co-branding{
-        margin-top:0;
-        order: 3;
-    }
-}
-
-@media screen and (min-width:321px) and (max-width:768px){
-    .main-header--inner--top{
-        align-item:flex-start;
-        background-color:rgba(255, 255, 255, 0.9);
-    }
-    .main-header-inner{
-            background: rgba(255,255,255,.9);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    }
-    .logo{
-        order:1;
-    }
-    
-    .co-branding{
-        margin-top:35px;
-        order:2;
-    }
-    .header--tools {
-     background-color: transparent; 
-    order: 3;
-    align-self: flex-end;
-    margin-left: 130px;
-    margin-top: -100px;
-}
-.header--tools-social{padding:0 26px 0 20px;}
-.mainnav{
-        order: 4;
-    align-self: flex-end;
-}
-}
-
-@media screen and (max-width:320px){
-    .co-branding{
-        margin:0px 0 0 140px;
         width:165px;
         padding-bottom: 39px;
     }
-    .main-header--inner--top{
-        padding-top: 19px;
+    .insert-co-branding{
+        padding-top: 14px;
+        padding-right: 32px;
+    }
+    .searchBox .btn_search, .searchBox .btn_search:hover, .searchBox .btn_search:active{right:-20px;}
+}
+@media screen and (max-width:768px){
+    .main-header--inner{background:rgba(255, 255, 255, 0.95);}
+    .main-header--inner--top{position:relative;}
+    .mainnav{
+        position:absolute;
+        left:-165px;
+    }
+    .insert-co-branding{
+        flex-direction:column;
+    }
+    .co-branding{align-self:flex-end;}
+    .header--tools{
+        display:flex;   
+        flex-direction:column;
+    }
+    .header--tools > div{
+        padding:0 20px 0 0;
+    }
+    
+}
+@media screen and (min-width:767px){
+    .mainnav{
+        
+        left:-140px;
+    }
+    .header--tools{
+        flex-direction:row-reverse;
+        max-height:80px;    
+    }
+    .header--tools > div{
+        margin-top: -30px;
+    }
+    .header--tools{
+        display:flex;flex-direction:row; 
+        
     }
 }
-@media only screen and (max-width: 450px){
+@media screen and (min-width:992px){
     .main-header{
-        background:rgba(255,255,255,.9);
+    background:rgba(255, 255, 255, 0.95);a
+}
+.co-branding{
+        order:2;
     }
-    .header--tools {
-        padding-right: 0 15px 0 5px !important;
-        background:transparent;
-    }
-    .header--tools-lang > a{padding:0 9px;}
 }
