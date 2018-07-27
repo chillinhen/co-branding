@@ -1,0 +1,112 @@
+
+.co-branding{
+width:234px;  
+        max-height:57px;
+        background:url(http://dev.overflow-hillen.de/img/Logo.svg) no-repeat 0 0;
+}
+.main-header--inner{
+    display:flex;
+        justify-content: space-between;
+}
+.header--tools {
+    background:transparent;
+}
+.co-branding{
+    height:0;
+    width:234px;
+    padding-bottom: 57px;
+    position:relative;
+    display:block;
+    
+}
+
+.insert-co-branding{
+    display: flex;
+    padding-top: 19px;
+    padding-right: 47px;
+}
+
+.logo{
+    margin-top:19px;
+}
+.co-branding img{
+    position: absolute; 
+    height: 100%; 
+    width: 100%; 
+    left: 0; 
+    top: 0;  
+}
+.searchBox{
+    width: 200px;
+    margin-right:0;
+}
+.mainnav{
+    background-color:transparent;
+}
+.news-home{
+    padding:10px 47px}
+.news-home .article--item{padding:24px 0;}
+
+.footer-nav,
+.blog-home{
+    padding:0 47px 0 20px;
+}
+.footer-copy-inner{
+    padding:30px 47px 30px 20px;
+}
+@media screen and (max-width:375px){
+    .co-branding{
+        width:165px;
+        padding-bottom: 39px;
+    }
+    .insert-co-branding{
+        padding-top: 14px;
+        padding-right: 32px;
+    }
+    .searchBox .btn_search, .searchBox .btn_search:hover, .searchBox .btn_search:active{right:-20px;}
+}
+@media screen and (max-width:768px){
+    .main-header--inner{background:rgba(255, 255, 255, 0.95);}
+    .main-header--inner--top{position:relative;}
+    .mainnav{
+        position:absolute;
+        left:-165px;
+    }
+    .insert-co-branding{
+        flex-direction:column;
+    }
+    .co-branding{align-self:flex-end;}
+    .header--tools{
+        display:flex;   
+        flex-direction:column;
+    }
+    .header--tools > div{
+        padding:0 20px 0 0;
+    }
+    
+}
+@media screen and (min-width:767px){
+    .mainnav{
+        
+        left:-140px;
+    }
+    .header--tools{
+        flex-direction:row-reverse;
+        max-height:80px;    
+    }
+    .header--tools > div{
+        margin-top: -30px;
+    }
+    .header--tools{
+        display:flex;flex-direction:row; 
+        
+    }
+}
+@media screen and (min-width:992px){
+    .main-header{
+    background:rgba(255, 255, 255, 0.95);a
+}
+.co-branding{
+        order:2;
+    }
+}

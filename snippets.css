@@ -1,72 +1,80 @@
 .co-branding{
-        height:0;
+    background:url(http://dev.overflow-hillen.de/img/Logo.svg) no-repeat 0 0;
+    min-width:145px;
+    min-height:50px;
+    margin:14px 16px 0 14px !important;
+}
+.header-tools{
+    background:transparent;
+}
+.main-header--inner--top{
+    background-color:rgba(255, 255, 255, 0.9);
+}
+@media screen and (max-width:375px){
+    .co-branding{
+     width:145px !important;
+     float:right;
+     
+    }
+    .header--tools{
+        clear: right;
+    }
+}
+@media screen and (min-width:376px) and (max-width:425px){
+    .co-branding{
+        margin:14px 16px 0 14px !important;
+        float:right;
+        width:165px !important;
+    }
+}
+@media screen and (min-width:426px) and (max-width:600px){
+    .co-branding{
+        margin:19px 47px 0 19px !important;
         width:234px;
-        padding-bottom: 57px;
-        position:relative;
-        display:block;
+        max-height:57px;
+        float:left !important;
+    }
+}
+@media screen and (min-width:760px){
+     .co-branding{
+        margin:19px 47px 0 19px !important;
+        width:234px;
+        height:57px;
+        float:right;
+    }
+    .header--tools {
         
-}
-.co-branding img{
-            position: absolute; 
-            height: 100%; 
-            width: 100%; 
-            left: 0; 
-            top: 0;  
-}
-.main-header--inner--top{
-background:rgba(255, 255, 255, 0.95);
-}
-.searchBox{
-	width: 200px;
-	margin-right: 0;
-	margin-left: 0;
-}
-.news-home{
-padding:10px 47px}
-
-.news-home .article--item{padding:24px 0;}
-
-.footer-nav,
-.blog-home{
-padding:0 47px 0 20px;
-}
-.footer-copy-inner{
-padding:30px 47px 30px 20px;
+        background-color:transparent;
+        padding-right:30px;
+    }
+    .searchBox, .header--tools a{
+           height: 63px;
+    line-height: 63px;
+    }
 }
 
-/*@media screen and (min-width:321px){
-	.main-header--inner--top{
-	
-	padding:19px 47px 0 0;
-	display:flex;
-	justify-content:space-between;
-	align-items:flex-start;}
-	
-	.co-branding{
-	margin-top:0;
-	order: 3;
-	}
-}*/
+@media screen and (min-width:768px){
+    .searchBox{
+        width:170px;
+    }
+}
+@media screen and (min-width:760px) and (max-width:1023px){
+    .header--tools {
+        clear:right;
+    }
 
-@media screen and (max-width:768px){
-	.main-header--inner--top{
-	align-item:flex-start;
-	}
-	.co-branding{margin-top:35px;}
 }
-
-@media screen and (max-width:320px){
-	.co-branding{
-	margin:0px 0 0 130px;
-	width:165px;
-	padding-bottom: 39px;
-}
-.main-header--inner--top{
-	padding-top: 19px;
-}
-}
-@media only screen and (max-width: 450px){
-	.header--tools {
-	    padding-right: 15px;
-	    }
+@media screen and (min-width:1024px){
+        .header--tools > div{
+        padding:50px 10px 20px 10px;
+    }
+    .searchBox, .header--tools a{
+           height: 16px;
+           line-height: 16px;
+    }
+    .searchBox > input[type="submit"],
+    .searchBox > input[type="text"]{
+        top:auto !important;
+        bottom:0%;
+    }
 }
